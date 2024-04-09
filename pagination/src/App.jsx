@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-
 function App() {
   const [page, setpage] = useState(1);
-
   const [products, setProducts] = useState();
-
   const fetchProducts = async () => {
     const res = await fetch("https://dummyjson.com/products?limit=100");
     const data = await res.json();
@@ -12,10 +9,9 @@ function App() {
       setProducts(data?.products);
     }
   };
-  useEffect(() => {
+  useEffect(() => { 
     fetchProducts();
   }, []);
-
   const selectedPagehandler = (selectedPage) => {
     if (
       selectedPage >= 1 &&
@@ -25,7 +21,6 @@ function App() {
       setpage(selectedPage);
     }
   };
-
   return (
     <div>
       {products?.length > 0 && (
@@ -60,7 +55,6 @@ function App() {
               </span>
             );
           })}
-
           <span
             className={
               page < products?.length / 10 ? "" : "pagination__disabled"
