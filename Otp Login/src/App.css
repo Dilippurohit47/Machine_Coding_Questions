@@ -1,0 +1,30 @@
+.App{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.otpInput{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.input{
+}
+
+.input input{ 
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px;
+}
+.input button{ 
+  border: none;
+  color: white;
+  padding: 2px 15px ;
+  font-size: 1.2rem;
+  background-color: #E60B2F;
+} 
