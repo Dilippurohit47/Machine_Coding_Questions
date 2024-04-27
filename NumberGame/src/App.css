@@ -1,0 +1,28 @@
+body {
+  /* background-color: black; */
+}
+.boxes {
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+  border: 1px solid black;
+
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  
+}
+
+.box {
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+
+}
+.active {
+  background-color: yellow;
+}
