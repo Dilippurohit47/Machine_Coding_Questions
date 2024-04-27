@@ -1,0 +1,54 @@
+body{
+ margin: 0;padding: 0;
+ box-sizing: border-box; 
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.input{
+height: 5rem;
+width: 20rem;
+padding: 5px;
+}
+.all_comment{
+  height: 50vh;
+  width: 50%;
+  /* background-color: red; */
+  border: 2px solid black;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.single_comment{
+  background-color: rgba(128, 128, 128, 0.255);
+  height: 5rem;
+  padding: 0px 5px;
+}
+.single_comment h3{
+}
+.single_comment p{
+  margin-top: -1rem;
+}
+
+.Replies{
+  display: flex;
+  gap: 1rem;
+}
+
+.replies{
+  background-color: red;
+  height: auto;
+  color: white;
+  width: 30vw;
+  position: absolute;
+  right: 25vw;
+
+}
